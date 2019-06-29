@@ -1,0 +1,13 @@
+.SideBar{
+    width: 100px;
+    background-color:#DBE3F1;
+    height: 100%;
+    border-right: 1px solid rgba(189, 189, 192, 0.1);
+}
+
+/* Rest of the sizes */
+@media (min-width: 576px){
+    .SideBar{
+        width: 400px;
+    }
+}
