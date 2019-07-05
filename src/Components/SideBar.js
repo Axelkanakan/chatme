@@ -1,6 +1,6 @@
 import React from 'react';
 import './SideBar.css';
-import User from '../Components/User'
+import User from '../Containers/User'
 import {Edit3} from 'react-feather';
 
 const SideBar = ({contacts}) => {
