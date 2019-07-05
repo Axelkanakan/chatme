@@ -3,7 +3,8 @@ import './SideBar.css';
 import User from '../Containers/User'
 import {Edit3} from 'react-feather';
 
-const SideBar = ({contacts}) => {
+const SideBar = ({ contacts }) => {
+    
     return (
         <aside className="SideBar">
             <div className="chatContainer">
@@ -15,11 +16,12 @@ const SideBar = ({contacts}) => {
                 <input placeholder="Search Messages"/>
             </div>
             <div className="chatContacts">
-            {contacts.map(contact => 
-            <div className="User-container" key={contact.user_id}>
-            <User user={contact}
-            key={contact.user_id}/>
-            </div>
+
+            {contacts.map( contact => 
+                <div className="User-container" key={contact.user_id}>
+                    <User user={contact}/>
+                </div>
+                
             )}
             </div>
             </div>
