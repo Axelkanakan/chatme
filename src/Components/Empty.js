@@ -1,5 +1,6 @@
 import React from 'react';
 import './Empty.css';
+import {Link, Bookmark, MoreVertical} from 'react-feather';
 
 const Empty = ({user}) => {
     const {name, profile_pic, status} = user;
@@ -8,7 +9,17 @@ const Empty = ({user}) => {
     return (
         <div className="Empty-container">
         <div className="Empty-header">
-            
+            <div className="empty-icons">
+                <div className="iconContainer">
+                    <Link size={16} color={'#A3B0C7'}/>
+                </div>
+                <div className="iconContainer">
+                    <Bookmark size={16} color={'#A3B0C7'}/>
+                </div>
+                <div className="iconContainer">
+                    <MoreVertical size={16} color={'#A3B0C7'}/>
+                </div>
+            </div>
         </div>
         <div className="Empty">
             <h1 className="Empty_name">Welcome, {first_name}</h1>

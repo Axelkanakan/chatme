@@ -1,8 +1,7 @@
 .SideBar{
     width: 100px;
-    background-color:#DBE3F1;
+    background-color:#F4F7FC;
     height: 100%;
-    border-right: 1px solid rgba(189, 189, 192, 0.1);
     overflow-y: scroll;
 }
 .chatHeader{
