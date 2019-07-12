@@ -3,11 +3,11 @@
 }
 
 .User-profile img{
-    width: 75px;
+    width: 50px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left:25px;
     margin-top:20px;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 
 .User_details, .User_details_date{
@@ -15,7 +15,7 @@
 }
 
 
-@media (min-width: 576px){
+@media (min-width: 850px){
     .User{
         width: 100%;
         height: 100%;
