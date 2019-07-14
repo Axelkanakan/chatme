@@ -14,6 +14,7 @@ const ChatWindow = ({activeUserId}) => {
     const {typing} = state;
     const activeUser = state.contacts[activeUserId]
     const activeMsgs = state.messages[activeUserId]
+    
     return (
         <div className="ChatWindow">   
             <Header user={activeUser} />

@@ -1,4 +1,4 @@
-import {SET_TYPING_VALUE, SEND_MESSAGE} from '../Constants/action-types';
+import {SET_TYPING_VALUE, SEND_MESSAGE, EDIT_CHAT} from '../Constants/action-types';
 
 export default function typing(state = "", action){
     switch (action.type){
@@ -6,6 +6,8 @@ export default function typing(state = "", action){
             return action.payload;
         case SEND_MESSAGE:
             return "";
+        case EDIT_CHAT:
+            return action.payload.text;
         default:
             return state;
     }

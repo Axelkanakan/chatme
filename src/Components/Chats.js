@@ -1,15 +1,35 @@
 import React, {Component} from 'react';
-
+import store from '../Store';
 import './Chats.css';
+import { deleteChat, editChat } from '../Actions';
+
+const handleDeleteChat = number => {
+    const activeUserId = store.getState().activeUserId;
+    store.dispatch(deleteChat(number, activeUserId));
+};
+
+const handleEditChat = (number, text, e) => {
+    const activeUserId = store.getState().activeUserId;
+    store.dispatch(editChat(number, activeUserId, text));
+};
+
 
 const Chat = ({message}) => {
-    const {text, is_user_msg} = message;
+    const { number, text, is_user_msg} = message;
 
-    return (
-        <span 
-            className={`Chat ${is_user_msg ? "is_user_msg" : ""}` } >{text}
-        </span>
-    );
+
+    return is_user_msg ? (
+        <div 
+            className="Chat is_user_msg" 
+            onDoubleClick={handleEditChat.bind(null, number, text)}
+            >
+            <span className="Chat__close" onClick={handleDeleteChat.bind(null, number)}>
+                X
+            </span>
+            {text}
+
+        </div>
+    ): (<span className="Chat">{text}</span>)
 };
 
 class Chats extends Component {

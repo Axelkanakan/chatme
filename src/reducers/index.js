@@ -10,10 +10,13 @@ import messages from './messages';
 
 import typing from './typing';
 
+import activeChatId from './activeChatId';
+
 export default combineReducers({
      user, 
      messages,
      typing,
      contacts,
-     activeUserId
+     activeUserId,
+     activeChatId
 });

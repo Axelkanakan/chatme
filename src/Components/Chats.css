@@ -21,6 +21,7 @@
 
 
 .Chat.is_user_msg{
+    position: relative;
     margin-left:auto;
     background: #fff;
     color: #7D818C;
@@ -29,7 +30,27 @@
     border-bottom-right-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    cursor: pointer;
 }
+
+.Chat.Chat.is_user_msg:hover .Chat__close{
+    display: inline-block;
+}
+
+.Chat__close {
+    position: absolute;
+    top: 0;
+    left:0;
+    font-size: 0.7rem;
+    border-radius:50%;
+    display: none;
+    text-align: center;
+    line-height: 1.3rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 
 @media (min-width: 850px){
     .Chat {

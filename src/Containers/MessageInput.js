@@ -14,14 +14,13 @@ const MessageInput = ({value}) => {
         
         e.preventDefault();
         
-        const {typing, activeUserId} = state;
+        const {typing, activeUserId, activeChatId} = state;
 
-        store.dispatch(sendMessage(typing, activeUserId));
+        store.dispatch(sendMessage(typing, activeUserId, activeChatId));
     }
 
     return (
-        <form 
-              className="Message" 
+        <form className="Message" 
               onSubmit={handleSubmit}>
             <input
                 className="Message_input"
