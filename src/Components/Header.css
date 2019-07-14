@@ -1,0 +1,12 @@
+.Header {
+    border-bottom: 1px solid rgba(189, 189, 192, 0.2);
+    height: 100px;
+}
+
+.Header_name {
+    color: black;
+}
+
+.Header_status{
+    color:black;
+}
