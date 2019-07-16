@@ -1,5 +1,17 @@
 .ChatWindow {
     display: flex;
+    width: 100%;
     flex-direction: column;
     height: 100vh;
+    margin-left:0px;
+}
+
+@media (min-width: 850px){
+    .ChatWindow {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        height: 100vh;
+        margin-left:40px;
+    }
 }

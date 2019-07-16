@@ -1,15 +1,52 @@
+.Message-container{
+    background: #fff;
+    width: 100%;
+    border-left:solid 1px #CFD3DB;
+    border-right: solid 1px #CFD3DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .Message {
-    width: 80%;
-    margin: 1rem auto;
+    width: 100%;
+
 }
 
 .Message_input {
-    width: 100%;
+    width: 95%;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    color: #000;
     border: 0;
-    border-radius: 10px;
     font-size: 16px;
     outline:0;
+}
+
+.Message_input::placeholder{
+    color: #D1D6E6;
+}
+
+.submit-button{
+    width: 40px;
+    height: 40px;
+    background: #6489FD;
+    border:none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button:focus{
+    outline: none;
+}
+
+.message-content{
+    width: 95%;
+    display: flex;
+    border-top: solid 1px #CFD3DB; 
+    justify-content: center;
+    align-items: center;
 }

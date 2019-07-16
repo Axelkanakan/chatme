@@ -3,9 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     overflow-y: scroll;
+    background: #fff;
+    border-left:none;
+    border-right: none;
 }
 
 .Chat {
@@ -55,5 +58,15 @@
 @media (min-width: 850px){
     .Chat {
         max-width: 60%;
+        margin-left:10px;
+    }
+
+    .Chat.is_user_msg{
+        margin-right: 10px;
+    }
+
+    .Chats {
+        border-left:solid 1px #CFD3DB;
+        border-right: solid 1px #CFD3DB;
     }
 }
