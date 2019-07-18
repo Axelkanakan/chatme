@@ -19,11 +19,9 @@ export default function messages(state = getMessages(10), action){
                 }
             }
         }
-
         case DELETE_CHAT:
             const messageId = action.payload.number;
             const activeUserId = action.payload.activeUserId;
-
             return {
                 ...state,
                 [activeUserId]: _.omit(state[activeUserId], messageId)

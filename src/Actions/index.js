@@ -4,6 +4,7 @@ import {
     SEND_MESSAGE,
     DELETE_CHAT,
     EDIT_CHAT,
+    CLEAR_ACTIVE
 
 } from '../Constants/action-types';
 
@@ -45,3 +46,7 @@ export const editChat = (number, activeUserId, text) => ({
     }
 });
 
+
+export const clearChat = () => ({
+    type:CLEAR_ACTIVE,
+});

@@ -1,6 +1,6 @@
 import React from 'react';
 import store from '../Store';
-import {setTypingValue, sendMessage} from '../Actions';
+import {setTypingValue, sendMessage, clearChat} from '../Actions';
 import './MessageInput.css';
 import {Send, Image, Folder} from 'react-feather'
 
@@ -18,6 +18,9 @@ const MessageInput = ({value}) => {
         const {typing, activeUserId, activeChatId} = state;
 
         store.dispatch(sendMessage(typing, activeUserId, activeChatId));
+
+        //clear chatId with a reducer and what you do is compare the chat Id
+        store.dispatch(clearChat());
     }
 
     return (
