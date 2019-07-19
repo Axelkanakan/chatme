@@ -1,9 +1,9 @@
 .Header{
     width: 100%;
     height: 85px;
-    background: #FAFBFF;
+    background: #F4F7FC;
     border: none;
-    border-bottom: 1px solid #CFD3DB;
+    border-bottom: 1px solid #E1E9F6;
     border-radius: 0px; 
     display: flex;
     justify-content: center;
@@ -34,10 +34,13 @@
 }
 
 .profile-img-container img{
-    width: 50px;
+    width: 55px;
     overflow: hidden;
     border-radius: 50%;
     margin-top:15px;
+    border: 2px solid #fff;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+
 }
 
 .info{
@@ -46,21 +49,27 @@
 }
 
 .info h1, p{
-    font-size: 16px;
     margin: 0;
     margin-top:10px;
 }
 
 .info h1{
-    color: #404040;
+    letter-spacing: .4px;
+    color:#404040;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .info p{
+    font-size:14px; 
     height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top:5px; 
-    color:#788EB4;
+    color:#8892A3;
+    letter-spacing: .4px;
+    line-height: 20px;
+
 }
 .contact-icons .Link, .Bookmark{
     display: none;
@@ -106,7 +115,7 @@
     }
     
     .profile-img-container img{
-        width: 50px;
+        width: 55px;
         overflow: hidden;
         border-radius: 50%;
         margin-top:15px;
@@ -118,21 +127,27 @@
     }
     
     .info h1, p{
-        font-size: 16px;
         margin: 0;
         margin-top:10px;
     }
     
     .info h1{
-        color: #404040;
+        letter-spacing: .4px;
+        color:#404040;
+        font-size: 16px;
+        font-weight: 500;
     }
     
     .info p{
+        font-size:14px; 
         height: 40px;
         overflow: hidden;
         text-overflow: ellipsis;
         margin-top:5px; 
-        color:#788EB4;
+        color:#97A0B7;
+        letter-spacing: .4px;
+        line-height: 20px;
+    
     }
 
     .contact-icons .Link, .Bookmark{
@@ -178,7 +193,7 @@
     }
     
     .profile-img-container img{
-        width: 50px;
+        width: 55px;
         overflow: hidden;
         border-radius: 50%;
         margin-top:15px;
@@ -190,21 +205,27 @@
     }
     
     .info h1, p{
-        font-size: 16px;
         margin: 0;
         margin-top:10px;
     }
     
     .info h1{
-        color: #404040;
+        letter-spacing: .4px;
+        color:#5E5E5E;
+        font-size: 16px;
+        font-weight: 500;
     }
     
     .info p{
+        font-size:14px; 
         height: 40px;
         overflow: hidden;
         text-overflow: ellipsis;
         margin-top:5px; 
-        color:#788EB4;
+        color:#97A0B7;
+        letter-spacing: .4px;
+        line-height: 20px;
+    
     }
 
     .contact-icons .Link, .Bookmark{
@@ -212,3 +233,4 @@
     }
 
 }
+ 
